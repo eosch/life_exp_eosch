@@ -17,6 +17,7 @@ library(tidyverse)
 library(gapminder)
 ```
 
+Load the data
 ```{r}
 data("gapminder_unfiltered")
 ```
@@ -24,7 +25,8 @@ data("gapminder_unfiltered")
 ```{r}
 glimpse(gapminder_unfiltered)
 ```
-
+Filter data by year and find the max from each year. 
+This info is stored in new data frame sumdat
 ```{r}
 gapminder_unfiltered%>%
   group_by(year)%>%
