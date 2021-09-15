@@ -25,3 +25,11 @@ data("gapminder_unfiltered")
 glimpse(gapminder_unfiltered)
 ```
 
+```{r}
+gapminder_unfiltered%>%
+  group_by(year)%>%
+  filter(lifeExp==max(lifeExp))%>%
+  select(year, country, lifeExp)->sumdat
+sumdat
+```
+
