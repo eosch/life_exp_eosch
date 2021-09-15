@@ -9,3 +9,19 @@ output: word_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r}
+library(tidyverse)
+```
+
+```{r}
+library(gapminder)
+```
+
+```{r}
+data("gapminder_unfiltered")
+```
+
+```{r}
+glimpse(gapminder_unfiltered)
+```
+
